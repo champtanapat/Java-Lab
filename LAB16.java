@@ -8,7 +8,6 @@ public class LAB16 {
         Scanner input = new Scanner(System.in);
         System.out.print("Please Enter Charter: ");
         text = input.next().charAt(0);
-
         do {
             invalid = true;
             System.out.print("Please Width greater than 0 and not greater than 15): ");
@@ -27,14 +26,13 @@ public class LAB16 {
                 invalid = false;
             }
         } while (!invalid);
-
         for (int i = 1; i <= length; i++) {
             System.out.print("" + text);
         }
         System.out.println();
         for (int i = 1; i <= width; i++) {
             System.out.print("" + text);
-            for (int j = 1; j < length; j++) {
+            for (int j = 1; j < length - 1; j++) {
                 System.out.print(" ");
             }
             System.out.print("" + text);
@@ -43,5 +41,6 @@ public class LAB16 {
         for (int i = 1; i <= length; i++) {
             System.out.print("" + text);
         }
+        System.out.println();
     }
 }
