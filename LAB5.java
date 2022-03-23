@@ -25,7 +25,7 @@ public class LAB5 {
            else if(sumScore>=80){
             System.out.print("Grade  B");
            }
-           else if(sumScore>=70){
+           else if(sumScore>=60){
             System.out.print("Grade  C");
            }
            else if(sumScore>=50){
