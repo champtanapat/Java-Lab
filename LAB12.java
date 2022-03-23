@@ -5,16 +5,15 @@ public class LAB12 {
         int scoreAssign, scoreReport, scoreMid, scoreFinal;
         int sumScore = 0;
         String  idStu ;
-        Scanner input ;
+        Scanner input = new Scanner(System.in);
         int select = 9;
 
         do {
             sumScore = 0;
             do {
-                input = new Scanner(System.in);
                 // รหัส
                 System.out.print("Input ID Student : ");
-                idStu = input.nextLine();
+                idStu = input.next();
                 // คะแนนการบ้าน
                 System.out.print("Input Score Assignment : ");
                 scoreAssign = input.nextInt();
