@@ -28,7 +28,7 @@ public class LAB11 {
 
             // คำนวณค่าไฟ
             if (qty_electric >= 301) {
-                amountElectric = (100 * 10) + (200 * 20) + ((qty_electric - 300) * 20);
+                amountElectric = (100 * 10) + (200 * 15) + ((qty_electric - 300) * 20);
             } else if (qty_electric >= 101) {
                 amountElectric = (100 * 10) + ((qty_electric - 100) * 15);
             } else {
