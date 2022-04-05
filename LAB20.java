@@ -5,7 +5,7 @@ public class LAB20 {
     {
         if (assignScore < 0 || assignScore > 20) {
             System.out.println("==============================================");
-            System.out.println("INVALID SCORE");
+            System.out.println("INVALID assignScore");
             System.out.println("==============================================");
             return true;
         }
@@ -15,7 +15,7 @@ public class LAB20 {
     {
         if (reportScore < 0 || reportScore > 10) {
             System.out.println("==============================================");
-            System.out.println("INVALID SCORE");
+            System.out.println("INVALID reportScore");
             System.out.println("==============================================");
             return true;
         }
@@ -25,7 +25,7 @@ public class LAB20 {
     {
         if (midScore < 0 || midScore > 30) {
             System.out.println("==============================================");
-            System.out.println("INVALID SCORE");
+            System.out.println("INVALID midScore");
             System.out.println("==============================================");
             return true;
         }
@@ -35,13 +35,13 @@ public class LAB20 {
     {
         if (finalScore < 0 || finalScore > 40) {
             System.out.println("==============================================");
-            System.out.println("INVALID SCORE");
+            System.out.println("INVALID finalScore");
             System.out.println("==============================================");
             return true;
         }
         return false;
     }
-    public static void findGrade(int sumScore)
+    public static void compareGrade(int sumScore)
     {
         if (sumScore >= 90) {
             System.out.println("Grade  A");
@@ -94,7 +94,7 @@ public class LAB20 {
             System.out.println("==============================================");
             sumScore = assignScore + reportScore + midScore + finalScore;
             System.out.println("Total Score: " + sumScore);
-            findGrade(sumScore);
+            compareGrade(sumScore);
             System.out.println("more student ? ( key 1 for more / other for end )");
             System.out.println("==============================================");
             select = input.nextInt();
