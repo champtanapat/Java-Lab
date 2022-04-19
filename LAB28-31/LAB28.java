@@ -60,7 +60,7 @@ public class LAB28 {
         }
     }
 
-    public static void printStu(int[][] arr_stu, String[] str_score,int stulen, int findGrade[]) {
+    public static void printStu(int[][] arr_stu, String[] str_score, int stulen, int findGrade[]) {
         System.out.print("\t");
         for (int i = 0; i < str_score.length; i++) {
             System.out.print("\t" + str_score[i] + "|");
@@ -68,7 +68,7 @@ public class LAB28 {
         System.out.println();
         for (int i = 0; i < stulen; i++) {
             System.out.print("Student no:" + (i + 1) + "\t");
-            for (int j = 0; j < str_score.length-1; j++) {
+            for (int j = 0; j < str_score.length - 1; j++) {
                 System.out.print("" + arr_stu[i][j] + "\t");
             }
             findGrade(arr_stu[i][4], findGrade);
@@ -180,7 +180,7 @@ public class LAB28 {
         avg[3] = sum[3] / stulen;
         avg[4] = sum[4] / stulen;
         System.out.print("\033[H\033[2J");
-        printStu(stu, str_score,stulen,grade);
+        printStu(stu, str_score, stulen, grade);
         printSum(sum);
         printAvg(avg);
         printCoutGrade(grade);
