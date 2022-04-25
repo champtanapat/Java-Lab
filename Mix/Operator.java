@@ -27,5 +27,16 @@ public class Operator {
         z = (int)g ; 
         y = 0.0f ;
         g = y;   
+
+        i = 0 ;
+        for (int ii = 0 ; ii<5;ii++)
+        {
+            System.out.println("i++: " +(i++));
+        }
+        i = 0 ; 
+        for (int ii = 0 ; ii<5;ii++)
+        {
+            System.out.println("++i: " + (++i));
+        }
     }
 }
